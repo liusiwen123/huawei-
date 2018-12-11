@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>华为登录页面</title>
+		<link rel="stylesheet" href="css/login.min.css">
+			<!-- 模块化开发 -->
+		<script src = 'js/require.js' async="true" defer data-main = 'js/main1'></script>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class = "head">
+			<ul>
+				<li><img src="images/HUAWEI.png" alt=""></li>
+				<li><p>华为商城</p></li>
+			</ul>
+		</div>
+		<!-- 广告 -->
+		<div class = "banner">
+			<span>依据《网络安全法》，为保障您的帐号安全与正常使用，请尽快绑定您的手机号，感谢您的理解及支持！</span>
+		</div>
+		<!-- 内容 -->
+		<div class = "content">
+			<!-- 背景图 -->
+			<div class = "content-1"></div>
+			<!-- 表单部分 -->
+			<div class = "content-2">
+				<div class = "cot-form">
+					<!-- 表单标题 -->
+					<ul>
+						<li class = "li1"><a href="">账号登录</a></li>
+						<li class = "li2"><a href="">扫码登录</a></li>
+					</ul>
+					<!-- 表单内容 -->
+					<div class = "form">
+						<!-- 上部分 -->
+						<div class = "form-edit-area">
+							<div class = "form-1-1" style = "display:none;"><i class="Error"></i>华为帐号限制在4~50 个字符
+							</div> 
+							<table border="0" cellpadding = "0" cellspacing = "0">
+								<tbody>
+								<!-- 手机号 -->
+									<tr>
+										<td class="user-input-tr">
+											<label class="lb_opacity_Class" style= "display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 0px; padding-top: 0px;" for="login_userName">
+												<div style= "border: none; background: transparent; cursor: text; margin: 2px; color: rgb(204, 204, 204);outline:none;" tabindex="-1" class="text vam div111">手机号/邮件地址</div>
+											</label>
+											<input type="text" autocomplete="off" class="text vam input11" id="login_userName" name="userAccount" maxlength="50" tabindex="1" validator="validator11542971574209" style= "z-index: 1; border : none;outline:none;">
+										</td>
+
+									</tr>
+									<!-- 密码 -->
+									<tr>
+										<td class="user-input-tr">
+											<label class="lb_opacity_Class" style= "display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 0px; padding-top: 0px;" for="login_password">
+												<div style= "border: none; background: transparent; cursor: text; margin: 2px; color: rgb(204, 204, 204);outline:none;" tabindex="-1" class="text vam div222">密码</div>
+											</label>
+											<input oncut="return false;" oncopy="return false" id="login_password" type="password" autocomplete="off" class="text vam input22" name="password" maxlength="32" tabindex="2" validator="validator21542971574211" style= "z-index: 1;border : none;outline:none;">
+										</td>
+									</tr>
+									<tr>
+										<td id="picAuthCode" class="verify-td referenceTarget td22" style = "font-size:12px;color:red;">
+											<!-- 至少包含8个字符	 -->  
+													</td>
+									</tr>
+									<!-- 短信验证码 -->
+									<tr>
+										<td class="mt-links lineHeightFix" id="operLinkTd">
+											<span id="smsLoginEntrance" class="changeLoginType l" data-type="userAccountLogin" title="短信验证码登录" style= "visibility: visible;">
+												<i class="phoneIcon marginR6"></i>短信验证码登录
+											</span>
+														
+										</td>
+									</tr>
+									<!-- 登录 -->
+									<tr>
+										<td>
+											<div class = "div444" style= "margin-bottom:0px;height:44px;">
+												<span class="vam error" id="login_msg" style= "display:block"></span>
+												<input type="button" class="button-login" id="btnLogin" data-type="accountLogin" value="登录" tabindex="5">
+											</div>
+											
+											<!-- <img class="load" src=""> -->
+										</td>
+									</tr>
+									<!-- 记住华为账号 -->
+									<tr>
+										<td class="mt-checkbox">
+											<span id="rememberNameSpan">
+												<input type="checkbox" class="checkbox vam" id="remember_name" name="remember_name" tabindex="4">
+												<label for="remember_name"><i id="remember_name_icon" class="checkBox-icon tick-off-icon marginR6"></i>记住华为帐号</label>
+											</span>
+											<div class="hidden remeberTip" style= "display: none;"></div>
+											<span class="mt-links-float r clearWidth floatFix referenceTarget_login_more">
+												<a class="btn-primary vam clearWidth" title="更多" id="btn-more">更多</a>
+											</span>
+										</td>
+									</tr>
+									<!-- 忘记密码 -->
+									<tr class = "tr1">
+										<td class=" p0">
+											<div class=" vam clearWidth">
+												<span class="regist">
+													<a id="registText" class="btn-primary clearWidth" href="" title="注册帐号">注册帐号
+													</a>
+												</span>
+												<span class="forgot">
+													<a class="btn-primary clearWidth" href="javascript:void(0)" onclick= "gotoresetpwd()" title="忘记密码？">忘记密码？
+													</a>
+												</span>	 
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- 下部分 -->
+						<div class = "form-2">
+							<div class="thirdLintTitle">
+								<i class="line-left"></i>
+								<span class="third-tips">其他方式登录</span>
+								<i class="line-right rotateImg"></i>
+							</div>	  
+							<div class="thirdLoginDiv">
+								<span class="qqLogin_bigIco" title="QQ" onclick= "thirdAccountBind(this)">
+									<a href="javascript:void(0);" tourl="/qq/authorize"><s></s>
+									</a>
+								</span>
+								<span class="alipayLogin_bigIco" title="支付宝" onclick= "thirdAccountBind(this)">
+									<a href="javascript:void(0);" tourl="/alipay/authorize"><s></s>
+									</a>
+								</span>
+								<span class="weixinLogin_bigIco" title="微信" onclick= "thirdAccountBind(this)">
+									<a href="javascript:void(0);" tourl="/weixin/authorize"><s></s>
+									</a>
+								</span>
+							</div>
+									
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!-- 底部 -->
+		<div class = "footer">
+			<div class="customer-footer">
+				<div class="ft">
+				<!--授权  -->
+        			<div class="warrant-area">
+            			<p style= "text-align: center;line-height:20px;height:20px;">
+							<a href="" class="rule" target="_blank">华为帐号用户协议</a>            	
+							<em class="foot_em">|</em>
+							<a href="" class="rule" target="_blank">关于华为帐号与隐私的声明</a>
+							<span class="foot_em"><em style= "font-style: normal">|</em> <a style= "padding:0 10px;" target="blank" href="">常见问题</a>
+							</span>	
+           				 </p>
+            
+        				<p style= "text-align: center;line-height: 12px;height:12px;margin-top: 10px ">
+        				Copyright&nbsp;©&nbsp;2011-2018&nbsp;&nbsp;华为软件技术有限公司&nbsp;&nbsp;版权所有&nbsp;&nbsp;保留一切权利&nbsp;&nbsp;苏B2-20070200号&nbsp;|&nbsp;苏ICP备09062682号-9	
+        				</p>
+        			</div>
+    			</div>
+			</div>
+		</div>
+	</body>
+</html>

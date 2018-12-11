@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>华为注册页面</title>
+		<link rel="stylesheet" href="css/register.min.css">
+		<!-- 模块化开发 -->
+		<script src = "js/require.js" async = "true" defer data-main = "js/main2"></script>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class = "head">
+			<ul>
+				<li><img src="images/head-top.png" alt=""></li>
+				<li><p>华为商城</p></li>
+			</ul>
+		</div>
+		<!-- 内容 -->
+		<div class="content">
+			<!-- 导航 -->
+			<div class="content-1">
+				<div class="div1" style= "visibility: visible;">
+					<a class="a1" href=""> <i class="phone-icon"></i>
+						<span id="Phone" class="tab-phone" style= "width: 66px;">手机号</span>
+					</a>
+					<a class="a2" href="" > <i class="mail-icon"></i>
+						<span id="Mail" class="tab-email" style= "width: 66px;">电子邮箱</span>
+					</a>		
+				</div>
+				<div class="div2">
+					已有华为帐号
+					<a href="" class="a3" title="登录">登录&gt;</a>
+					<!-- <span class="span3">&gt;</span> -->
+				</div>			
+			</div>
+			<!-- 表单内容 -->
+			<div class = "content-2">
+				<!-- 1国家地区 -->
+				<div class="div1"  >
+					<div class="div1-1">
+						国家/地区
+					</div>
+					<div class ="div1-2" >
+						<input type="hidden" value="1-cn">
+						<span>中国</span>
+						<div class="select-ico"></div>
+					</div>
+					
+				</div>
+				<!-- 2手机号 -->
+				<div class = "div2">
+					<dl class = "dl1">
+						<!--一、手机号  -->
+						<dd>
+							<div class = "div2-1" >
+								<label for="" class = "label1">
+									<span class = "f1">+86(中国)</span>
+									<i class = "i2"></i>	
+								</label>
+								<input type="text" placeholder = "请输入手机号" id = "mobile_" class = "input1" maxlength = "50" name="phone" style= "border:none;background:transparent;color: rgb(204, 204, 204);outline:none;">
+							</div>
+						</dd>
+						<!-- 隐藏输入手机号码 -->
+						<dt>
+							<div class = "div2-2">
+								<span class = "span11" style = "display:none;">
+								<p class = "p11" style= "color:red;font-size:12px;padding-left:20px;">手机号不正确</p></span>
+							</div>
+						</dt>
+					</dl>
+				</div>
+				<!-- 3图形验证码 -->
+				<div class = "div3">
+					<dl class = "dl3" style = "height:46px;">
+						<dd style = "height:46px;">
+						<!-- 左边 -->
+							<div class = "div3-1" style = " border:none; rgb(51,51,51);">
+								<label class = "label11"  for="code2_">图形验证码</label>
+								<input type="text" placeholder= "请输入图形验证码" id = "input22" maxlength = "4" style= "border:none;background:transparent;color: rgb(204, 204, 204);outline:none;">
+							</div>
+							<!-- <!-- 右边 -->
+							<div class = "div3-2" style = "padding:0">
+								<!-- <img class = "img3" src="images/authCodeImage.png" alt="" style= "height: 40px; width: 100px;"> -->
+							</div> 
+						</dd>
+						<!-- 隐藏输入验证码 -->
+						<dt>
+							<div class = "div3-3" style = 
+							"display:none;">
+								<i class = "iconfont icon-jianhao"></i>
+								<p class = "p22"style= "color:red;font-size:12px;padding-left:30px;"><!-- 输入正确 --></p>
+							</div>
+						</dt>
+					</dl>
+				</div>
+				<!-- 4短信验证码 -->
+				<div class = "div4">
+					<dl class = "dl33">
+						<dd>
+						<!-- 左边 -->
+							<div class = "div4-1" style = "border:none;rgb(51,51,51);">
+								<label class = "label23"  for="code23_">短信验证码</label>
+								<input type="text" placeholder = "请输入短信验证码" id = "input23" style= "border:none;background:transparent;color: rgb(204, 204, 204);outline:none;">
+							</div>
+							<!-- 右边 -->
+							<div class = "div4-2">
+								<a href="" class = "a23">
+									<span id = "span23">获取验证码</span>
+								</a>
+							</div>
+						</dd>
+						<!-- 隐藏输入短信验证码 -->
+						<dt>
+							<div class = "div4-3">
+								<i class = "iconfont icon-jianhao"></i>
+								<p class ="p33"></p>
+							</div>
+						</dt>
+					</dl>
+				</div>
+				<!-- 5密码 -->
+				<div class = "div5">
+					<dl class = "dl34">
+						<dd>
+							<div class = "div5-1" style = "border:none;rgb(51,51,51);">
+								<label class = "laber34" for="reg_password">密码</label>
+								<input type="password" name = "password1" placeholder = "请输入密码" id = "password_" class = "input35" maxlength = "50" style= "border:none;background:transparent;color: rgb(204, 204, 204);outline:none;padding-left:20px;">
+							</div>
+						</dd>
+						<!-- 隐藏输入密码 -->
+						<dt>
+							<div class = "div5-2">
+								<i class = "iconfont icon-jianhao"></i>	
+							</div>
+							<p class = "p44" style= "height:12px;color:red;font-size:12px;padding-left:16px;"><!-- 8-32个字符，区分大小写 --></p>
+						</dt>
+					</dl>
+				</div>
+				<!-- 6.确认密码 -->
+				<div class = "div6">
+					<dl class = "dl44">
+						<dd style = "height:42px;">
+							<div class = "div6-1" style = "border:none;">
+								<label class = "laber44" for="re_password">确认密码</label>
+								<input type="password" style= "border:none;background:transparent;color: rgb(204, 204, 204);outline:none;padding: 12px 16px;" placeholder = " 请再次输入密码" name = "password2" id = "repassword_" class = "input44" maxlength = "50">
+							</div>
+						</dd>
+						<!-- 隐藏输入确认密码 -->
+						<dt style = "height:62px;">
+							<div class = "div6-2" style = "height:">
+								<i class = "iconfont icon-jianhao"></i>
+							</div>
+							<p class = "p45" style= "height:12px;color:red;font-size:12px;padding-left:16px;"><!-- 两次密码输入不一致 --></p>
+						</dt>
+					</dl>
+				</div>
+				<!-- 注册 -->
+				<div class=" div7" align="center">
+					<input type="button" class="btn btn-reg sel" id="btnSubmit" value="注册" tabindex="7">
+					<div id="register_msg" style= "position: relative; left: 26%;"></div>
+				</div>
+				
+			</div>
+		</div>
+		<!-- 横线 -->
+		<div class="box-shadow"></div>
+		<!-- 底部 -->
+		<div class="footer">
+			<div class="reg-content">
+				<p class="footer">
+					<a id="foot_EULA" href="" class="rule" target="_blank">华为帐号用户协议</a>
+					<em class="foot_em">|</em>
+					<a id="foot_privacy" href="" class="rule" target="_blank">关于华为帐号与隐私的声明</a>
+					<span id="faqPart" class="foot_em"><em style= "font-style: normal">|</em> <a style= "padding:0 10px;" target="blank" href="">常见问题</a></span>									
+				</p>
+				<p id="copyrightPart" class="footer">Copyright&nbsp;©&nbsp;2011-2018&nbsp;&nbsp;华为软件技术有限公司&nbsp;&nbsp;版权所有&nbsp;&nbsp;保留一切权利&nbsp;&nbsp;苏B2-20070200号&nbsp;|&nbsp;苏ICP备09062682号-9</p>	
+	</div>
+</div>
+	</body>
+</html>

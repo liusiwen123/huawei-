@@ -1,0 +1,62 @@
+[{"id":0,"title":"手机","nm":"lc_617804","nav":[
+		{"name":"荣耀"},
+		{"name":"HUAWEI P系列"},
+		{"name":"华为畅玩系列"},
+		{"name":"HUAWEI MaTE系列"},
+		{"name":"HUAWEI Nova系列"},
+		{"name":"HUAWEI 麦芒系列"},
+		{"name":"华为畅享系列"},
+		{"name":"移动4G+专区"}],
+	"child":[
+	{"img":"images/shouji11.png"},
+	{"img":"images/shouji12.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/shouji12.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/shouji12.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/shouji12.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/shouji12.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/shouji12.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/shouji12.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/shouji12.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/shouji12.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/shouji12.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/shouji12.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/shouji12.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/shouji12.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/shouji12.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"}]},
+{
+"id":1,"title":"笔记本","nm":"lc_617812","nav":[
+		{"name":"平板电脑"},
+		{"name":"笔记本电脑"},
+		{"name":"笔记本配件"}],
+	"child":[{"img":"images/bijiben1.png"},
+	{"img":"images/bijiben2.png","title1":"荣耀Magic Book","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/bijiben2.png","title1":"荣耀Magic Book","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/bijiben2.png","title1":"荣耀Magic Book","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/bijiben2.png","title1":"荣耀Magic Book","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/bijiben2.png","title1":"荣耀Magic Book","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/bijiben2.png","title1":"荣耀Magic Book","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/bijiben2.png","title1":"荣耀Magic Book","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/bijiben2.png","title1":"荣耀Magic Book","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/bijiben2.png","title1":"荣耀Magic Book","desc":"智能语音平板","price":"￥1899"}]},	                  
+{
+"id":2,"title":"平板","nm":"lc_617814","nav":[
+		{"name":"平板电脑"},
+		{"name":"笔记本电脑"},
+		{"name":"笔记本配件"}],
+	 "child":[{"img":"images/shouji1.png"},
+	{"img":"images/pingban1.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/pingban2.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/pingban2.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/pingban2.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/pingban2.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/pingban2.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/pingban2.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/pingban2.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"},
+	{"img":"images/pingban2.png","title1":"华为平板 M5青春版","desc":"智能语音平板","price":"￥1899"}]}	                  
+]
+
+
+
+
+
+

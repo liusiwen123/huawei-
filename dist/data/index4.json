@@ -1,0 +1,65 @@
+[{"id":0,"title":"穿戴","nm":"lc_617800","nav":[
+	{"name":"手环"},
+	{"name":"手表"},
+	{"name":"VR"},
+	{"name":"查看更多"}],
+	 "child":[
+	{"img":"images/shoubiao1.png"},
+	{"img":"images/shoubiao2.png","title1":"HUAWEI WATCH GT<","desc":"稀缺货源  限量发售 ","price":"￥1288"},
+	{"img":"images/shoubiao2.png","title1":"HUAWEI WATCH GT<","desc":"稀缺货源  限量发售 ","price":"￥1288"},
+	{"img":"images/shoubiao2.png","title1":"HUAWEI WATCH GT<","desc":"稀缺货源  限量发售 ","price":"￥1288"},
+	{"img":"images/shoubiao2.png","title1":"HUAWEI WATCH GT<","desc":"稀缺货源  限量发售 ","price":"￥1288"},
+	{"img":"images/shoubiao2.png","title1":"HUAWEI WATCH GT<","desc":"稀缺货源  限量发售 ","price":"￥1288"},
+	{"img":"images/shoubiao2.png","title1":"HUAWEI WATCH GT<","desc":"稀缺货源  限量发售 ","price":"￥1288"},
+	{"img":"images/shoubiao2.png","title1":"HUAWEI WATCH GT<","desc":"稀缺货源  限量发售 ","price":"￥1288"},
+	{"img":"images/shoubiao2.png","title1":"HUAWEI WATCH GT<","desc":"稀缺货源  限量发售 ","price":"￥1288"},
+	
+	{"img":"images/shoubiao11.png","np":"10","title1":"华为智能手表 保时捷联合设计","desc":"低调奢华 天生不凡","price":"￥4988"},
+	{"img":"images/shoubiao12.png","np":"11","title1":"华为手环B3 青春版","desc":"是手环 也是耳机","price":"￥499"},
+	{"img":"images/shoubiao12.png","np":"12","title1":"华为手环B3 青春版","desc":"是手环 也是耳机 ","price":"￥499"},
+	{"img":"images/shoubiao11.png","np":"13","title1":"华为手环B3 青春版","desc":"是手环 也是耳机 ","price":"￥499"},
+	{"img":"images/shoubiao12.png","np":"14","title1":"华为手环B3 青春版","desc":"是手环 也是耳机 ","price":"￥499"},
+	{"img":"images/shoubiao12.png","np":"15","title1":"华为手环B3 青春版","desc":"是手环 也是耳机","price":"￥499"},
+	{"img":"images/shoubiao12.png","np":"16","title1":"华为手环B3 青春版","desc":"是手环 也是耳机 ","price":"￥499"},
+	{"img":"images/shoubiao11.png","np":"17","title1":"华为手环B3 青春版","desc":"是手环 也是耳机 ","price":"￥499"},
+	{"img":"images/shoubiao12.png","np":"18","title1":"华为手环B3 青春版","desc":"是手环 也是耳机 ","price":"￥499"},
+	{"img":"images/shoubiao11.png","np":"19","title1":"华为手环B3 青春版","desc":"是手环 也是耳机 ","price":"￥499"},
+	{"img":"images/shoubiao12.png","np":"20","title1":"华为手环B3 青春版","desc":"是手环 也是耳机 ","price":"￥499"},
+	{"img":"images/shoubiao12.png","np":"21","title1":"华为手环B3 青春版","desc":"是手环 也是耳机 ","price":"￥499"}]},	                  
+{
+"id":1,"title":"家居","nm":"lc_617806","nav":[
+	{"name":"路由器"},
+	{"name":"子母/分布式路由"},
+	{"name":"电力猫"},
+	{"name":"查看更多"}], 
+
+	 "child":[{"img":"images/jiaju3.png"},
+	{"img":"images/jiaju4.png","title1":"华为AI音箱","desc":"丹拿音质 声纹识别","price":"￥399"},
+	{"img":"images/jiaju4.png","title1":"华为AI音箱","desc":"丹拿音质 声纹识别","price":"￥399"},
+	{"img":"images/jiaju4.png","title1":"华为AI音箱","desc":"丹拿音质 声纹识别","price":"￥399"},
+	{"img":"images/jiaju4.png","title1":"华为AI音箱","desc":"丹拿音质 声纹识别","price":"￥399"},
+	{"img":"images/jiaju4.png","title1":"华为AI音箱","desc":"丹拿音质 声纹识别","price":"￥399"},
+	{"img":"images/jiaju4.png","title1":"华为AI音箱","desc":"丹拿音质 声纹识别","price":"￥399"},
+	{"img":"images/jiaju4.png","title1":"华为AI音箱","desc":"丹拿音质 声纹识别","price":"￥399"},
+	{"img":"images/jiaju4.png","title1":"华为AI音箱","desc":"丹拿音质 声纹识别","price":"￥399"},
+	{"img":"images/jiaju4.png","title1":"华为AI音箱","desc":"丹拿音质 声纹识别","price":"￥399"},
+	
+	{"img":"images/jiaju1.png","np":"10","title1":"荣耀路由标准版","desc":"限时直降60元","price":"￥99"},
+	{"img":"images/jiaju2.png","np":"11","title1":"华为路由器WS5102","desc":"限时直降60元","price":"￥99"},
+	{"img":"images/jiaju2.png","np":"12","title1":"华为路由器WS5102","desc":"限时直降60元","price":"￥99"},
+	{"img":"images/jiaju2.png","np":"13","title1":"华为路由器WS5102","desc":"限时直降60元","price":"￥99"},
+	{"img":"images/jiaju2.png","np":"14","title1":"华为路由器WS5102","desc":"限时直降60元","price":"￥99"},
+	{"img":"images/jiaju2.png","np":"15","title1":"华为路由器WS5102","desc":"限时直降60元","price":"￥99"},
+	{"img":"images/jiaju2.png","np":"16","title1":"华为路由器WS5102","desc":"限时直降60元","price":"￥99"},
+	{"img":"images/jiaju3.png","np":"17","title1":"华为路由器WS5102","desc":"限时直降60元","price":"￥99"},
+	{"img":"images/jiaju2.png","np":"18","title1":"华为路由器WS5102","desc":"限时直降60元","price":"￥99"},
+	{"img":"images/jiaju2.png","np":"19","title1":"华为路由器WS5102","desc":"限时直降60元","price":"￥99"},
+	{"img":"images/jiaju2.png","np":"20","title1":"华为路由器WS5102","desc":"限时直降60元","price":"￥99"},
+	{"img":"images/jiaju2.png","np":"21","title1":"华为路由器WS5102","desc":"限时直降60元","price":"￥99"}]}	                  
+]
+
+
+
+
+
+

@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>华为商城首页</title>
+		<link rel="stylesheet" href="css/index.min.css">
+		<!-- 
+		<script src = "js/jquery-1.10.1.min.js"></script>
+		<script src = "js/index.js"></script> -->
+	 	<!-- 模块化开发 -->
+		<script src = 'js/require.js' async="true" defer data-main = 'js/main'></script>
+		<script>
+			// banner图
+/*			var arr = [{
+				id:0,
+				img:'images/lunbotu1.jpg',
+				title:'华为1'
+			},{
+				id:1,
+				img:'images/lunbotu2.jpg',
+				title:'华为2'
+			},{
+				id:2,
+				img:'images/lunbotu3.jpg',
+				title:'华为3'
+			},{
+				id:3,
+				img:'images/lunbotu8.jpg',
+				title:'华为4'
+			},{
+				id:4,
+				img:'images/lunbotu4.jpg',
+				title:'华为5'
+			},{
+				id:5,
+				img:'images/lunbotu5.jpg',
+				title:'华为6'
+			},{
+				id:6,
+				img:'images/lunbotu6.jpg',
+				title:'华为7'
+			},{
+				id:7,
+				img:'images/lunbotu7.jpg',
+				title:'华为8'
+			},{
+				id:8,
+				img:'images/lunbotu8.jpg',
+				title:'华为8'
+			}];
+			var str = JSON.stringify(arr);
+			document.write(str);
+*/
+
+			/*导航侧边栏*/
+			// 第一组
+		/*	var arr = [{
+						id:0,
+						title:"手机",
+						aaa:'category-panels-3',
+						child:[{
+							child:[{
+								img:"images/rongyao1.png",
+								name:'荣耀'
+							},{
+								img:"images/rongyao2.png",
+								name:'HUAWEI P系列'
+							},{
+								img:"images/rongyao3.png",
+								name:'荣耀畅玩系列'
+							},{
+								img:"images/rongyao4.png",
+								name:'HUAWEI MATE系列'
+							}]},
+							{
+							child:[{
+								img:"images/rongyao5.png",
+								name:'华为Nova 系列'
+							},{
+								img:"images/rongyao6.png",
+								name:'HUAWEI麦芒系列'
+							},{
+								img:"images/rongyao7.png",
+								name:'华为畅享系列'
+							},{
+								img:"images/rongyao8.png",
+								name:'移动4G专区'
+							}]},
+							{
+							child:[{
+								name:'查看全部'
+							}]
+						}]},
+					{
+						id:1,
+						title:'笔记本$平板',
+						aaa:'category-panels-1',
+						child:[{
+								img:'images/rongyao1.png',
+								name:'平板电脑'
+							},{
+								img:'images/rongyao2.png',
+								name:'笔记本电脑'
+							},{
+								img:'images/rongyao3.png',
+								name:'笔记本配件'
+							},{
+								img:'images/rongyao4.png',
+								name:'查看全部'
+						}]
+					},{
+						id:2,
+						title:'智能穿戴',
+						aaa:'category-panels-1',
+						child:[{
+							img:'images/rongyao5.png',
+							name:'手环'
+						},{
+							img:'images/rongyao6.png',
+							name:'手表'
+						},{
+							img:'images/rongyao7.png',
+							name:'VR'
+						},{
+							name:'查看全部'
+						}]
+					},{
+						id:3,
+						title:'智能家居',
+						aaa:'category-panels-4',
+						child:[{
+							child:[{
+								img:'images/rongyao1.png',
+								name:'路由器'
+							},{
+								img:'images/rongyao2.png',
+								name:'电视盒子'
+							},{
+								img:'images/rongyao3.png',
+								name:'照明'
+							},{
+								img:'images/rongyao4.png',
+								name:'清洁'	
+							}]},{
+							child:[{
+								img:'images/rongyao5.png',
+								name:'子母/分布式路由'
+							},{
+								img:'images/rongyao6.png',
+								name:'电力猫'
+							},{
+								img:'images/rongyao7.png',
+								name:'随行wifi'
+							},{
+								img:'images/rongyao8.png',
+								name:'节能'	
+							}]},{
+							child:[{
+								img:'images/rongyao1.png',
+								name:'环境'
+							},{
+								img:'images/rongyao2.png',
+								name:'安防'
+							},{
+								img:'images/rongyao3.png',
+								name:'健康'
+							},{
+								img:'images/rongyao4.png',
+								name:'厨电'
+							}]},{
+							child:[{
+								img:'images/rongyao5.png',
+								name:'影音'
+							},{
+								img:'images/rongyao6.png',
+								name:'卫浴'
+							},{
+								img:'images/rongyao7.png',
+								name:'其他'
+							},{
+								name:'查看全部'	
+							}]
+						}]},
+					{
+						id:4,
+						title:'通用配件',
+						aaa:'category-panels-3',
+						child:[{
+							child:[{
+								img:'images/rongyao1.png',
+								name:'移动电源'
+							},{
+								img:'images/rongyao2.png',
+								name:'耳机'
+							},{
+								img:'images/rongyao3.png',
+								name:'音箱'
+							},{
+								img:'images/rongyao4.png',
+								name:'自拍杆'
+							}]},{
+							child:[{
+								img:'images/rongyao5.png',
+								name:'充电器'
+							},{
+								img:'images/rongyao6.png',
+								name:'U盘'
+							},{
+								img:'images/rongyao7.png',
+								name:'摄像头'
+							},{
+								img:'images/rongyao8.png',
+								name:'智能硬件'
+							}]},{
+							child:[{
+								img:'images/rongyao1.png',
+								name:'生活周边'
+							},{
+								img:'images/rongyao2.png',
+								name:'取卡针'
+							},{
+								name:'查看全部'
+							}]
+						}]},{
+							id:5,
+							title:'专属配件',
+							aaa:'category-panels-2',
+							child:[{
+								child:[{
+									img:'images/rongyao1.png',
+									name:'保护壳'
+								},{
+									img:'images/rongyao2.png',
+									name:'保护套'
+								},{
+									img:'images/rongyao3.png',
+									name:'贴膜'
+								},{
+									img:'images/rongyao4.png',
+									name:'盒子专属配件'
+								}]},{
+								child:[{
+									img:'images/rongyao5.png',
+									name:'表带'
+								},{
+									img:'images/rongyao6.png',
+									name:'触控笔'
+								},{
+									name:'查看全部'
+								}]
+							}]}];				
+	
+			var str = JSON.stringify(arr);
+			document.write(str);*/
+
+		</script>
+	</head>
+	<body>
+	<!-- 顶部 -->
+		<div class="top-banner" id="top-banner-block">	
+		<!-- 顶部banner -->
+			<div class="top-banner-max hide" id="top-banner-max" style= "overflow: hidden;">
+				<!-- <div class="top-banner-img">
+					<a title="折叠" href="javascript:;" class="button-top-banner-min" id="top-banner-max-toggle">-</a>
+				</div> -->
+			</div>
+			<div class="top-banner-min hide" id="top-banner-min" style= "display: block; background-color: rgba(0, 0, 0, 0); overflow: hidden;">
+				<div class="top-banner-img">
+					<p style= "font-size:0;">
+						<a style= "display:block;position:relative;width:1920px;text-align:center;left:50%;background-color:;margin-left:-960px;" title="Mate20" target="_blank" href="" title="Mate20"><img src="images/top.jpg"></a>
+
+					</p>
+					<!-- <a title="展开" href="javascript:;" class="button-top-banner-max hide" id="top-banner-min-toggle">+</a> -->
+					<a class="button-top-banner-close" href="javascript:;" title="关闭" id="top-banner-min-close"><!-- 关闭 --></a>
+				</div>
+			</div>
+		<!-- 顶部banner end -->
+		</div>
+
+		<!--导航条  -->
+		<div class = "nav-box">
+			<div class = "nav">
+			<!-- 左边 -->
+				<div class = "s-sub">
+					<ul>
+						<li class = "li1"><a href="">首页</a></li>
+						<li><a href="">华为官网</a></li>
+						<li><a href="">荣耀官网</a></li>
+						<li><a href="">花粉俱乐部</a></li>
+						<li><a href="">v码(优购码)</a></li>
+						<li><a href="">企业购</a></li>
+						<li><a href="">Select Region</a></li>
+					</ul>
+				</div>
+				<!-- 右边 -->
+				<div class = "s-main">
+					
+					<ul>
+					<!-- 第一列 -->
+						<li class = "li1">
+							<div><a href="">请登录</a>
+								<a href="">注册</a>
+							</div>
+						</li>
+						<!-- 第二列 -->
+						<li><a href="">我的订单</a></li>
+						<!-- 第三列 -->
+						<li>
+							<div class = "s-dropdown">
+								<div class = "h"><a class = "icon-dropdown" href="">客户服务</a></div>
+								<!-- 隐藏数据 -->
+								<div class = "b">
+									<div class = "dropdown-more">
+										<dl>
+											<dt><a href="">帮助中心</a></dt>
+											<dt><a href="">联系客服</a></dt>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- 第四列 -->
+						<li>
+							<div class = "s-dropdown">
+								<div class = "h"><a class = "icon-dropdown" href="">网站导航</a></div>
+								<!-- 隐藏数据 -->
+								<div class = "b">
+									<div class = "dropdown-navs">
+										<p><a href=""></a></p>
+										<div class = "dropdown-navs-icon">
+											<a href="">商城首页</a>
+										</div>
+										<p>
+											<br>
+										</p>
+										<dl>
+											<dt>频道</dt>
+											<dd>
+												<div class = "item"><a href="">华为专区</a></div>
+												<div class = "item"><a href="">企业购</a></div>
+												<div class = "item"><a href="">荣耀专区</a></div>
+											</dd>
+										</dl>
+										<dl>
+											<dt>产品</dt>
+											<dd>
+												<div class = "item"><a href="">手机</a></div>
+												<div class = "item"><a href="">智能家居</a></div>
+												<div class = "item"><a href="">平板&笔记本</a></div>
+												<div class = "item"><a href="">通用配件</a></div>
+												<div class = "item"><a href="">智能穿戴</a></div>
+												<div class = "item"><a href="">专属配件</a></div>
+											</dd>
+										</dl>
+										<dl>
+											<dt>增值服务</dt>
+											<dd>
+												<div class = "item"><a href="">以旧换新</a></div>
+												<div class = "item"><a href="">礼品包装</a></div>
+												<div class = "item"><a href="">补购保障</a></div>
+											</dd>
+										</dl>
+										<dl>
+											<dt>会员</dt>
+											<dd>
+												<div><a href="">会员频道</a></div>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!--第五列  -->
+						<li class="downloadApp">
+            				<div class="s-dropdown">
+                				<div class="h">
+									<a class="icon-dropdown" style = "    cursor: pointer;">手机版</a>
+								</div>
+								<!-- 隐藏数据 -->
+								<div class="b">
+									<div class="dropdown-code">
+										<div class="clearfix dropdown-code-detail">  
+											<a href="" target="_blank"><img src="https://res.vmallres.com/pimages//sale/2018-10/20181029165607165.png" class="code-img">
+											</a>
+											<div class="code-info">
+												<h2>华为商城APP</h2>
+												<p class="red">新人专享好礼<br>最高获5000积分</p>     
+												<span class="icon-andrid"></span>    
+											</div>                               
+										</div>                                
+										<div class="clearfix dropdown-code-detail">     <a><img src="https://res.vmallres.com/pimages//sale/2018-10/20181029165608251.png" class="code-img">    
+											</a>                                    
+											<div class="code-info">              
+												<h2>华为商城公众号</h2>
+												<p>微信扫一扫</p>                   
+												<span class="icon-wechat"></span>    
+											</div>                                
+										</div> 
+									</div> 
+								</div>   
+							</div>         
+       				 	</li>
+						<!-- 第六列 -->
+						<li>
+                        	<div class="s-dropdown s-dropdown-minicart">
+                            	<div class="h h-wide" id="header-toolbar-minicart">
+                                	<a href="" rel="nofollow" timetype="timestamp" target="blank"  style= "display:inline-block;height:40px;"><span style= "padding-left:6px;display:inline-block;height:40px;">购物车(<span id="header-cart-total">0</span>)</span>
+                                	</a>
+                            	</div>
+                            	<!-- 隐藏数据 -->
+                            	 <div class="b" id="header-toolbar-minicart-content">
+                                	<div class="dropdown-minicart">
+                                    	<div class="minicart-pro-empty minicart-pro-empty-index" id="minicart-pro-empty">
+                                    	<!-- <img src="images/bg71.png" alt="" class = "hide"> -->
+                                        	<p><span class="icon-minicart"></span></p>
+                                       	 	<p id="cartInfo">您的购物车是空的，赶紧选购吧~</p>
+                                    	</div>
+                                   		<!-- 结算
+                                   		<div class="minicart-pro-list minicart-pro-list-scroll hide" id="minicart-pro-list-block" >
+                                        	<ul class="minicart-pro-list" id="minicart-goods-list"></ul>
+                                        	<div class="minicart-pro-settleup" id="minicart-pro-settleup">
+	                                            <p>
+	                                                <span>总计：</span>
+	                                                <span><b id="micro-cart-totalPrice">¥&nbsp;0</b><s id="micro-cart-totalOriginPrice">¥&nbsp;0</s></span>
+	                                            </p>
+	                                            <a class="button-minicart" id="button-minicart-go2confirm" href="javascript:;">结算</a>
+	                                            <a class="button-minicart disabled" id="disbutton-minicart-go2confirm" style="">结算</a>
+                                        	</div>
+                                    	</div> -->
+                                	</div>
+                               
+                            	</div> 
+                        	</div>
+                    	</li>	
+					</ul>
+				</div>		
+			</div>
+				
+		</div>
+		<!-- size 头部 -->
+		<div class = "header">
+			<div class = "layout">
+				<!-- 左边 -->
+				<div class = "left">
+					<div class = "logo">
+						<a href=""><img src="images/tu3.png" alt=""></a>
+					</div>
+					<div class = "naver">
+						<ul>
+							<li class = "img" id = "huawei"><a href=""><img src="images/huawei1.png" alt=""></a></li>
+							<li class = "img" id = "honor"><a href=""><img src="images/honor.png" alt=""></a></li>
+							<li id = "huawei"><a href="">Mate20系列</a></li>
+							<li id = "honor"><a href="">荣耀10</a></li>
+							<li id = "huawei"><a href="">P20系列</a></li>
+							<li id = "honor"><a href="">荣耀V10</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 右边 -->
+				<div class = "right">
+					<div class = "search-bar">
+						<!-- div1 -->
+						<div class = "search-bar-form" id="search-bar-form">
+							<form action="">
+								<input type="text" class="text" maxlength="200" id="search-kw" autocomplete="off">
+								<input type="submit" class = "button" value="搜索">
+								<input type="hidden" id="channelType" name = "channelType" value="0">
+								<input type="hidden" id="default-search" value="nova 3i|荣耀 Note10">
+							</form>
+						</div>
+						<!-- div2 -->
+						<div class ="search-bar-key" id="search-bar-key">
+							<div class = "searchBar-key">
+								<a href="">荣耀Magic2</a>
+								<a href="">HUAWEI Mate20</a>
+							</div>
+						</div>
+						<!-- div3历史记录 -->
+						<div class = "search-bar-history " id="search-bar-history " style= "display:none;">
+							<p>
+								<label for="">历史记录</label>
+								<span id= "clearup" class= "search-history-btn">清除</span>
+							</p>
+							<ul id="search-history-list">
+							<!-- 隐藏数据 -->
+								<li>
+									<a href="">HUA WEI</a>
+								</li>
+							</ul>
+						</div>
+						<!-- div4搜索的内容 -->
+						<div class ="Autocomplete-Containter" style= "top:184px;left:910.5px;">
+							<div class = "autocomplete-w1">
+								<!-- 隐藏数据 -->
+								<div class= "autocomplete" id="autocomplete" style = "width:290px;max-height:400px;display:none;">
+									<div title="华为畅享 Max" class="selected">
+										<em>华为</em>
+										"畅享 MAX"
+									</div>
+									<div title="华为畅享 Max">
+										<em>华为</em>
+										"畅享 MAX"
+									</div>
+									<div title="华为畅享 Max">
+										<em>华为</em>
+										"畅享 MAX"
+									</div>
+									<div title="华为畅享 Max">
+										<em>华为</em>
+										"畅享 MAX"
+									</div>
+									<div title="华为畅享 Max">
+										<em>华为</em>
+										"畅享 MAX"
+									</div>
+									<div title="华为畅享 Max">
+										<em>华为</em>
+										"畅享 MAX"
+									</div>
+									<div title="华为畅享 Max">
+										<em>华为</em>
+										"畅享 MAX"
+									</div>
+									<div title="华为畅享 Max">
+										<em>华为</em>
+										"畅享 MAX"
+									</div>
+									<div title="华为畅享 Max">
+										<em>华为</em>
+										"畅享 MAX"
+									</div>
+									<div title="华为畅享 Max">
+										<em>华为</em>
+										"畅享 MAX"
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 侧面导航、轮播图 -->
+		<!-- 1左边侧面导航 -->
+		<div class = "naver-main">
+			<div class = "layout">
+				<div class = "category category-index" id="category-block">
+					<div class = "b">
+						<ol class="category-list">
+							<!-- 第一组 手机 --> 
+							<li id = "zxnav_0" class = "category-item">
+								<div class = "category-info">
+									<div class = "category-title">
+										<a href=""><span>手机</span></a>
+									</div>
+									<a href=""><span>荣耀</span></a>
+									<a href=""><span>HUAWEI P系列</span></a>
+									<i class></i>
+								</div>
+								<!-- 隐藏数据 -->
+							<!-- 	<div class = "category-panels category-panels-3">
+									第一列
+									<ul class = "subcate-list clearfix">
+										<li class = "subcate-item">
+											<a href="">
+												<img src="images/rongyao1.png" alt="">
+												<span>荣耀</span>
+											</a>
+										</li>
+										<li class = "subcate-item">
+											<a href="">
+												<img src="images/rongyao2.png" alt="">
+												<span>HUAWEI P系列</span>
+											</a>
+										</li>
+										<li class = "subcate-item">
+											<a href="">
+												<img src="images/rongyao3.png" alt="">
+												<span>荣耀畅玩系列</span>
+											</a>
+										</li>
+										<li class = "subcate-item">
+											<a href="">
+												<img src="images/rongyao4.png" alt="">
+												<span>华为 Mate系列	</span>
+											</a>
+										</li>
+									</ul>
+									 第二列 
+									<ul class = "subcate-list clearfix">
+										<li class = "subcate-item">
+											<a href="">
+												<img src="images/rongyao5.png" alt="">
+												<span>HUAWEI nova系列</span>
+											</a>
+										</li>
+										<li class = "subcate-item">
+											<a href="">
+												<img src="images/rongyao6.png" alt="">
+												<span>HUAWEI 麦芒系列</span>
+											</a>
+										</li>
+										<li class = "subcate-item">
+											<a href="">
+												<img src="images/rongyao7.png" alt="">
+												<span>华为畅享系列</span>
+											</a>
+										</li>
+										<li class = "subcate-item">
+											<a href="">
+												<img src="images/rongyao8.png" alt="">
+												<span>移动4G专区</span>
+											</a>
+										</li>
+								
+									</ul>
+									第三列
+									<ul class = "subcate-list clearfix">
+										<li class = "subcate-btn">
+											<a href="">查看全部</a>
+										</li>
+									</ul> 
+								</div> -->
+							</li>
+							<!-- 第二组 笔记本&平板 -->
+							<li id = "zxnav_1" class = "category-item odd">
+
+								<div class = "category-info">
+									<div class = "category-title">
+										<a href=""><span>笔记本&平板 </span></a>
+									</div>
+									<a href=""><span>平板电脑</span></a>
+									<a href=""><span>笔记本电脑</span></a>
+									<i></i>
+								</div>
+								<!-- 隐藏数据 -->
+								<!-- <div class = "category-panels category-panels-1">
+									<ul class = "subcate-list clearfix">
+										<li class = "subcate-item">
+											<a href="">
+												<img src="images/rongyao1.png" alt="">
+												<span>荣耀</span>
+											</a>
+										</li>
+										<li class = "subcate-item">
+											<a href="">
+												<img src="images/rongyao2.png" alt="">
+												<span>HUAWEI P系列</span>
+											</a>
+										</li>
+										<li class = "subcate-item">
+											<a href="">
+												<img src="images/rongyao3.png" alt="">
+												<span>荣耀畅玩系列</span>
+											</a>
+										</li>
+										<li class = "subcate-item">
+											<a href="">
+												<img src="images/rongyao4.png" alt="">
+												<span>华为 Mate系列	</span>
+											</a>
+										</li>
+									</ul>
+								</div> -->
+							</li>
+							<!-- 第三组 智能穿戴 -->
+							<li id = "zxnav_2" class = "category-item">
+								<div class = "category-info">
+									<div class = "category-title">
+										<a href=""><span>智能穿戴 </span></a>
+									</div>
+									<a href=""><span>手环</span></a>
+									<a href=""><span>手表</span></a>
+									<a href=""><span>VR</span></a>
+									<i></i>
+								</div>
+								<!-- 隐藏数据 -->
+								<!-- <div class = "category-panels category-panels-1"></div> -->
+							</li>
+							<!-- 第四组 智能家居 -->
+							<li id = "zxnav_3" class = "category-item odd">
+								<div class = "category-info">
+									<div class = "category-title">
+										<a href=""><span>智能家居 </span></a>
+									</div>
+									<a href=""><span>路由器</span></a>
+									<a href=""><span>电视盒子</span></a>
+									<a href=""><span>照明</span></a>
+									<i></i>
+								</div>
+								<!-- 隐藏数据 -->
+								<!-- <div class = "category-panels category-panels-4"></div> -->
+							</li>
+							<!-- 第五组 通用配件 -->
+							<li id = "zxnav_4" class = "category-item">
+								<div class = "category-info">
+									<div class = "category-title">
+										<a href=""><span>通用配件 </span></a>
+									</div>
+									<a href=""><span>移动电源</span></a>
+									<a href=""><span>耳机</span></a>
+									<a href=""><span>音箱</span></a>
+									<i></i>
+								</div>
+								<!-- 隐藏数据 -->
+								<!-- <div class = "category-panels category-panels-3"></div> -->
+							</li>
+							<!-- 第六组 专属配件 -->
+							<li id = "zxnav_5" class = "category-item odd">
+								<div class = "category-info">
+									<div class = "category-title">
+										<a href=""><span>专属配件 </span></a>
+									</div>
+									<a href=""><span>保护壳</span></a>
+									<a href=""><span>保护套</span></a>
+									<a href=""><span>贴膜</span></a>
+									<i></i>
+								</div>
+								<!-- 隐藏数据 -->
+								<!-- <div class = "category-panels category-panels-2"></div> -->
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 2右边轮播图 -->
+		<div class = "hot-board hot-board-index">
+			<div class = "ec-slider" id = "index_slider">
+				<!-- 图片 -->
+				<ul>
+					<!-- <li><a href=""><img src="images/lunbotu1.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/lunbotu2.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/lunbotu3.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/lunbotu8.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/lunbotu4.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/lunbotu5.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/lunbotu6.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/lunbotu7.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/lunbotu1.jpg" alt=""></a></li> -->
+				</ul>
+				<!-- 8个按钮 -->
+				<div class="ec-slider-middle">
+					<!-- 下边6个按钮 -->
+					<div class ="ec-slider-nav-l">
+						<span class = 
+						"active"></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<!-- 左右2个按钮 -->
+					<a href="javascript:void(0)" class = "button-slider-prev"></a>
+					<a href="javascript:void(0)" class = "button-slider-next"></a>
+				</div>
+			</div>
+			<ul></ul>
+			<ul></ul>
+			<!-- 下边图标 -->
+			<div class ="mask">
+				<span></span>
+			</div>
+		</div>
+		<!-- 中间内容   菜单栏 热销单品 精品推荐 -->
+		<div class = "home-channel-menu">
+			<div class = "layout relative">
+				<div class = "channel-floor-0 relative">
+					<!-- 内容1 -->
+					<div class = "h">
+					<!-- 菜单栏 -->
+						<div class = "home-channel-main">
+							<ul class = "home-channel-list clearfix home-channel-img6">
+								<!-- 第一列 -->
+								<li class = "f1 s1">
+									<!-- hide -->
+									 <div id = "gg_login" class = "i-mall-prompt clearfix hide">
+										<div class = "relative f1 w-name">	
+											<!-- 头像 -->
+											<a href="">
+												<img id="gg_customerPic" src="images/img_not_logged_in.png" alt="">
+											</a>
+										</div>
+										<div class = "f1">
+											<div class = "w-info">
+												"您好"
+												<span id="gg_loginName"></span>
+											</div>
+											<div class = "w-btn">
+												<a id = 
+												"oldPeople"  class = "new" style= "display:none;" href="">消息中心</a>
+												<a id = 
+												"newPeople"  class = "new"href="">新人福利</a>
+												<a href="">会员频道</a>
+											</div>
+										</div>
+									</div> 
+									<!-- show -->
+									<div id = "gg_unlogin" class = "i-mall-prompt clearfix">
+										<div class = "relative f1 w-name">	
+											<!-- 头像 -->
+											<img id="gg_customerPic" src="images/img_not_logged_in.png" alt="">
+										</div>
+										<div class = "f1">
+											<div id = "gg_login_url" class = "w-reg">
+												"您好！请"
+												<a href="">登录</a>
+												<span>&nbsp;/&nbsp;</span>
+												<a href="">注册</a>
+											</div>
+											<div class = "w-btn">
+												<a class = "new" href="">新人福利</a>
+												<a href="">会员频道</a>
+											</div>
+										</div>
+
+									</div>
+								</li>
+								<!-- 第二列 -->
+								<li class = "f1 s2">
+									<ul class = "clearfix">
+										<li>
+											<a href="">
+												<div class="p-img">
+													<img class = "img0" src="images/1212.png" alt="">
+												</div>
+												<div class = "p-dec">企业购特惠</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="p-img">
+													<img class = "img1" src="images/1212.png" alt="">
+												</div>
+												<div class = "p-dec">以旧换新</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="p-img">
+													<img class = "img2" src="images/1212.png" alt="">
+												</div>
+												<div class = "p-dec">会员领劵</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="p-img">
+													<img class = "img3" src="images/1212.png" alt="">
+												</div>
+												<div class = "p-dec">优选配件</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="p-img">
+													<img class = "img4" src="images/1212.png" alt="">
+												</div>
+												<div class = "p-dec">尾款支付</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="p-img">
+													<img class = "img5" src="images/1212.png" alt="">
+												</div>
+												<div class = "p-dec">优享购</div>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<!-- 第三列 -->
+								<li class = "f1 s3">
+									<!-- 上边 -->
+									<div class = "p-notice clearfix">
+										<div class = "icon-notice fl">
+											<a href=""><span>公告</span></a>
+										</div>
+									</div>
+									<!-- 下边 -->
+									<div class = "p-info">
+										<ul class = "clearfix">
+											<li>
+												<a href="">
+													<span>
+													<img class = "img0" src="images/1212.png" alt=""></span>
+													优购码
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<span>
+													<img class = "img1" src="images/1212.png" alt=""></span>
+													实名认证
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<span>
+													<img class = "img2" src="images/1212.png" alt=""></span>
+													补购保障
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- 荣耀MAgic2 -->
+						<div class>
+							<ul class = "home-promo-list clearfix">
+								<!-- <li><a class = "item" href=""><img src="images/tu11.png" alt=""></a></li>
+								<li><a class = "item" href=""><img src="images/tu12.png" alt=""></a></li>
+								<li><a class = "item" href=""><img src="images/tu13.png" alt=""></a></li>
+								<li><a class = "item" href=""><img src="images/tu14.png" alt=""></a></li> -->
+							</ul>
+						</div>
+					</div>
+					<!--  -->
+					<div class = "b"></div>
+					<!-- 内容2 热销单品 -->
+					<div class = "b">
+						<div class = "home-recommend-goods home-hot-goods index-channel-floor">
+							<!-- 标题 -->
+							<div class = "h">
+								<h2 class = "title change-title">热销单品</h2>
+							</div>
+							<!-- 内容 -->
+							<div class = "b clearfix wing">
+								<!-- 左边 -->
+								<!-- <div class = "span-232 fl">
+									<ul class="grid-promo-list clearfix">
+										<li class="grid-items grid-items-sm">
+											<a class = "thumb" href="">
+												<img src="images/shouji1.png" alt="">
+											</a>
+										</li>
+									</ul>
+								</div> -->
+								<!-- 右边 -->
+								<!-- <div class = "span-968 fl">
+									<ul class = "grid-list clearfix">
+										第一组
+										<li class = "grid-items">
+											<a class = "thumb" href="">
+												<p class = "grid-img">
+													<img src="images/danpin1.png" alt="">
+												</p>
+												<div class = "grid-title">荣耀10青春版</div>
+												<p class = "grid-desc">幻彩渐变 享更多权益 </p>
+												<p class = "grid-price">￥1399</p>
+												<p class = "grid-tips">
+													<em class = "thumb">
+														<span class="color01" style= "background-color:#68BEFF">首发</span>
+													</em>
+												</p>
+											</a>
+										</li>
+										第2组
+										<li class = "grid-items">
+											<a class = "thumb" href="">
+												<p class = "grid-img">
+													<img src="images/danpin2.png" alt="">
+												</p>
+												<div class = "grid-title">HUAWEI P20</div>
+												<p class = "grid-desc">享6期免息 限量好礼 </p>
+												<p class = "grid-price">￥4988</p>
+												<p class = "grid-tips">
+													<em class = "thumb">
+														<span class="color01" style= "background-color:#FF6A6E">爆款</span>
+													</em>
+												</p>
+											</a>
+										</li>
+										第3组
+										<li class = "grid-items">
+											<a class = "thumb" href="">
+												<p class = "grid-img">
+													<img src="images/danpin3.png" alt="">
+												</p>
+												<div class = "grid-title">荣耀PLay</div>
+												<p class = "grid-desc">最高优惠700 </p>
+												<p class = "grid-price">￥1699</p>
+												<p class = "grid-tips">
+													<em class = "thumb">
+														<span class="color01" style= "background-color:#FF6A6E">爆款</span>
+													</em>
+												</p>
+											</a>
+										</li>
+										第4组
+										<li class = "grid-items">
+											<a class = "thumb" href="">
+												<p class = "grid-img">
+													<img src="images/danpin4.png" alt="">
+												</p>
+												<div class = "grid-title">荣耀10青春版</div>
+												<p class = "grid-desc">幻彩渐变 享更多权益 </p>
+												<p class = "grid-price">￥1399</p>
+												
+											</a>
+										</li>
+										第5组
+										<li class = "grid-items">
+											<a class = "thumb" href="">
+												<p class = "grid-img">
+													<img src="images/danpin1.png" alt="">
+												</p>
+												<div class = "grid-title">荣耀10青春版</div>
+												<p class = "grid-desc">幻彩渐变 享更多权益 </p>
+												<p class = "grid-price">￥1399</p>
+												<p class = "grid-tips">
+													<em class = "thumb">
+														<span class="color01" style= "background-color:#FF6A6E">首发</span>
+													</em>
+												</p>
+											</a>
+										</li>
+										第6组
+										<li class = "grid-items">
+											<a class = "thumb" href="">
+												<p class = "grid-img">
+													<img src="images/danpin2.png" alt="">
+												</p>
+												<div class = "grid-title">荣耀10青春版</div>
+												<p class = "grid-desc">幻彩渐变 享更多权益 </p>
+												<p class = "grid-price">￥1399</p>
+												
+											</a>
+										</li>
+										第7组
+										<li class = "grid-items">
+											<a class = "thumb" href="">
+												<p class = "grid-img">
+													<img src="images/danpin3.png" alt="">
+												</p>
+												<div class = "grid-title">荣耀10青春版</div>
+												<p class = "grid-desc">幻彩渐变 享更多权益 </p>
+												<p class = "grid-price">￥1399</p>
+												<p class = "grid-tips">
+													<em class = "thumb">
+														<span class="color01" style= "background-color:#FF6A6E">首发</span>
+													</em>
+												</p>
+											</a>
+										</li>
+										第8组
+										<li class = "grid-items">
+											<a class = "thumb" href="">
+												<p class = "grid-img">
+													<img src="images/danpin4.png" alt="">
+												</p>
+												<div class = "grid-title">荣耀10青春版</div>
+												<p class = "grid-desc">幻彩渐变 享更多权益 </p>
+												<p class = "grid-price">￥1399</p>
+												<p class = "grid-tips">
+													<em class = "thumb">
+														<span class="color01" style= "background-color:#68BEFF">首发</span>
+													</em>
+												</p>
+											</a>
+										</li>
+									</ul>
+								</div> -->
+							</div>
+							
+						</div>
+					</div>
+					<!-- 内容3精品推荐 -->
+					<div class = "b">
+						<div class = "home-recommend-goods index-channel-floor tuijian">
+							<!-- 标题 -->
+							<div class = "h">
+								<h2 class="title-1">精品推荐</h2>
+							</div>
+							<!-- 内容 -->
+							<div class = "b">
+								<div id = "goodsRecommend-recommend" class = "goods-rolling swiper-container relative">
+									<ul id class = "grid-list swiper-wrapper clearfix" style = "width: 10648px; height: 295px; transform: translate3d(0px, 0px, 0px); transition-duration: 0s;">
+										<!-- <li class="grid-items swiper-slide swiper-slide-visible swiper-slide-active">
+											<a class = "thumb" href="">
+												<div class = "grid-info">
+													<p class = "grid-img">
+														<img src="images/tuijian1.png" alt="">
+													</p>
+													<p class = "grid-desc">4+32G版限时优惠100  </p>
+												</div>
+												<div class = "grid-title">荣耀畅玩8C</div>
+												<p class = "grid-price">￥999</p>
+												<p class = "grid-tips">
+													<em class="thumb"> 
+														<span class="color01" style= "background-color:#68BEFF">新品</span> 
+													</em>
+												</p>
+											</a>
+										</li>
+										<li class="grid-items swiper-slide swiper-slide-visible">
+											<a class = "thumb" href="">
+												<div class = "grid-info">
+													<p class = "grid-img">
+														<img src="images/tuijian1.png" alt="">
+													</p>
+													<p class = "grid-desc">4+32G版限时优惠100  </p>
+												</div>
+												<div class = "grid-title">荣耀畅玩8C</div>
+												<p class = "grid-price">￥999</p>
+												<p class = "grid-tips">
+													<em class="thumb"> 
+														<span class="color01" style= "background-color:#68BEFF">新品</span> 
+													</em>
+												</p>
+											</a>
+										</li>
+										<li class="grid-items swiper-slide swiper-slide-visible">
+											<a class = "thumb" href="">
+												<div class = "grid-info">
+													<p class = "grid-img">
+														<img src="images/tuijian1.png" alt="">
+													</p>
+													<p class = "grid-desc">4+32G版限时优惠100  </p>
+												</div>
+												<div class = "grid-title">荣耀畅玩8C</div>
+												<p class = "grid-price">￥999</p>
+												<p class = "grid-tips">
+													<em class="thumb"> 
+														<span class="color01" style= "background-color:#68BEFF">新品</span> 
+													</em>
+												</p>
+											</a>
+										</li>
+										<li class="grid-items swiper-slide swiper-slide-visible">
+											<a class = "thumb" href="">
+												<div class = "grid-info">
+													<p class = "grid-img">
+														<img src="images/tuijian1.png" alt="">
+													</p>
+													<p class = "grid-desc">4+32G版限时优惠100  </p>
+												</div>
+												<div class = "grid-title">荣耀畅玩8C</div>
+												<p class = "grid-price">￥999</p>
+												<p class = "grid-tips">
+													<em class="thumb"> 
+														<span class="color01" style= "background-color:#68BEFF">新品</span> 
+													</em>
+												</p>
+											</a>
+										</li>
+										<li class="grid-items swiper-slide swiper-slide-visible">
+											<a class = "thumb" href="">
+												<div class = "grid-info">
+													<p class = "grid-img">
+														<img src="images/tuijian1.png" alt="">
+													</p>
+													<p class = "grid-desc">4+32G版限时优惠100  </p>
+												</div>
+												<div class = "grid-title">荣耀畅玩8C</div>
+												<p class = "grid-price">￥999</p>
+												<p class = "grid-tips">
+													<em class="thumb"> 
+														<span class="color01" style= "background-color:#68BEFF">新品</span> 
+													</em>
+												</p>
+											</a>
+										</li>
+										<li class="grid-items swiper-slide swiper-slide-visible">
+											<a class = "thumb" href="">
+												<div class = "grid-info">
+													<p class = "grid-img">
+														<img src="images/tuijian1.png" alt="">
+													</p>
+													<p class = "grid-desc">4+32G版限时优惠100  </p>
+												</div>
+												<div class = "grid-title">荣耀畅玩8C</div>
+												<p class = "grid-price">￥999</p>
+												<p class = "grid-tips">
+													<em class="thumb"> 
+														<span class="color01" style= "background-color:#68BEFF">新品</span> 
+													</em>
+												</p>
+											</a>
+										</li>
+										<li class="grid-items swiper-slide swiper-slide-visible">
+											<a class = "thumb" href="">
+												<div class = "grid-info">
+													<p class = "grid-img">
+														<img src="images/tuijian1.png" alt="">
+													</p>
+													<p class = "grid-desc">4+32G版限时优惠100  </p>
+												</div>
+												<div class = "grid-title">荣耀畅玩8C</div>
+												<p class = "grid-price">￥999</p>
+												<p class = "grid-tips">
+													<em class="thumb"> 
+														<span class="color01" style= "background-color:#68BEFF">新品</span> 
+													</em>
+												</p>
+											</a>
+										</li>
+										<li class="grid-items swiper-slide swiper-slide-visible">
+											<a class = "thumb" href="">
+												<div class = "grid-info">
+													<p class = "grid-img">
+														<img src="images/tuijian1.png" alt="">
+													</p>
+													<p class = "grid-desc">4+32G版限时优惠100  </p>
+												</div>
+												<div class = "grid-title">荣耀畅玩8C</div>
+												<p class = "grid-price">￥999</p>
+												<p class = "grid-tips">
+													<em class="thumb"> 
+														<span class="color01" style= "background-color:#68BEFF">新品</span> 
+													</em>
+												</p>
+											</a>
+										</li>
+										<li class="grid-items swiper-slide swiper-slide-visible">
+											<a class = "thumb" href="">
+												<div class = "grid-info">
+													<p class = "grid-img">
+														<img src="images/tuijian1.png" alt="">
+													</p>
+													<p class = "grid-desc">4+32G版限时优惠100  </p>
+												</div>
+												<div class = "grid-title">荣耀畅玩8C</div>
+												<p class = "grid-price">￥999</p>
+												<p class = "grid-tips">
+													<em class="thumb"> 
+														<span class="color01" style= "background-color:#68BEFF">新品</span> 
+													</em>
+												</p>
+											</a>
+										</li>
+										<li class="grid-items swiper-slide swiper-slide-visible">
+											<a class = "thumb" href="">
+												<div class = "grid-info">
+													<p class = "grid-img">
+														<img src="images/tuijian1.png" alt="">
+													</p>
+													<p class = "grid-desc">4+32G版限时优惠100  </p>
+												</div>
+												<div class = "grid-title">荣耀畅玩8C</div>
+												<p class = "grid-price">￥999</p>
+												<p class = "grid-tips">
+													<em class="thumb"> 
+														<span class="color01" style= "background-color:#68BEFF">新品</span> 
+													</em>
+												</p>
+											</a>
+										</li> -->
+
+									</ul>
+									<!-- 左右两个按钮 -->
+									<div class = "grid-btn swiper-button-prev btn-prev disabled"></div>
+									<div class = "grid-btn swiper-button-prev btn-next"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 中间内容  轮播图  -->
+		<div class = "channel1">
+			<div class = "layout">
+				<!-- 轮播图 -->
+				<div class = "home-banner">
+					<div class = "home-banner-slideshow">
+						<div class = "banner-slideshow">
+							<div class = "hr-27"></div>
+							<div id = "m-banner" class = "chanel-div" style = "width:1200px;height:120px;">
+								<ul class = "ul2" style = "width:1200px;height:120px;">
+									<li class = "ec-slider-item">
+									<div class = "ec-slider-item-img"><a href=""><img src="images/manzeng.jpg" alt=""></a></div></li>
+								</ul>
+							</div>
+							<div class = "hr-13"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 中间大块内容     （手机 笔记本电脑 精品平板）格式相同 
+							（智能穿戴 智能家居 热销配件 品牌配件）格式相同-->	
+		<div class = "home-channel-container relative index-channel-floor">
+		<!-- 第一块 手机 笔记本电脑 精品平板 格式相同-->
+			<!-- 手机 -->
+		<!-- 	<div class = "layout" id = "lc_617804">
+				<div class = "home-channel-floor"> -->
+					<!-- 1标题 -->
+					<!-- <div class = "h"> -->
+						<!-- 左 -->
+						<!-- <h2 class = "channel-title fl">手机</h2>
+						<!-- 中 -->
+						<!-- <ul class = "channel-nav fl">
+							<li><a href="">荣耀</a></li>
+							<li><a href="">HUAWEI P系列</a></li>
+							<li><a href="">华为畅玩系列</a></li>
+							<li><a href="">HUAWEI Mate系列</a></li>
+							<li><a href="">HUAWEI Nova系列</a></li>
+							<li><a href="">HUAWEI 麦芒系列</a></li>
+							<li><a href="">华为畅享系列</a></li>
+							<li><a href="">移动4G+专区</a></li>
+						</ul>  -->
+						<!-- 右 -->
+					<!-- 	<div class = "channel-more fr">
+							<a href="">查看更多</a>
+						</div> -->
+					<!-- </div> -->
+					<!-- 2内容 -->
+					<!-- <div class = "b">
+						<div class = "goods-list">
+							<ul class = "grid-list clearfix"> -->
+								<!-- 1组 -->
+								<!-- <li class = "grid-items grid-items-md"><a class = "thumb" href=""><img src="images/shouji1.png" alt=""></a></li> -->
+								<!-- 2组 -->
+								<!-- <li class = "grid-items">
+									<a class = "thumb" href="">
+										<div class = "grid-info">
+											<p class = "grid-img">
+												<img src="images/shouji12.png" alt="">
+											</p>
+										</div>
+										<div class = "grid-title">HUAWEI Mate 20 RS</div>
+										<p class = "grid-desc">保时捷设计</p>
+										<p class = "grid-price">￥12999</p>
+									</a>
+								</li> -->
+								<!--3组 -->
+								<!-- <li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li> -->
+							<!-- </ul>
+						</div>
+					</div>
+				</div> -->
+				<div class = "hr-27"></div>
+			<!-- </div> -->
+			<!-- 中间间隙 -->
+			<div class = "hr-13"></div>
+
+
+			<!-- 笔记本电脑 -->
+			<!-- <div class = "layout" id="lc_617812">
+				<div class = "home-channel-floor"> -->
+					<!-- 1标题 -->
+					<!-- <div class = "h"> -->
+						<!-- 左 -->
+						<!-- <h2 class = "channel-title fl">笔记本电脑</h2> -->
+						<!-- 中 -->
+						<!-- <ul class = "channel-nav fl">
+							<li><a href="">平板电脑</a></li>
+							<li><a href="">笔记本电脑</a></li>
+							<li><a href="">笔记本配件</a></li>
+						</ul> -->
+						<!-- 右 -->
+						<!-- <div class = "channel-more fr">
+							<a href="">查看更多</a>
+						</div> -->
+					<!-- </div> -->
+					<!-- 2内容 -->
+					<!-- <div class = "b">
+						<div class = "goods-list">
+							<ul class = "grid-list clearfix"> -->
+								<!-- 1组 -->
+								<!-- <li class = "grid-items grid-items-md"><a class = "thumb" href=""><img src="images/bijiben1.png" alt=""></a></li> -->
+								<!-- 2组 -->
+								<!-- <li class = "grid-items">
+									<a class = "thumb" href="">
+										<div class = "grid-info">
+											<p class = "grid-img">
+												<img src="images/bijiben2.png" alt="">
+											</p>
+										</div>
+										<div class = "grid-title">荣耀Magic Book</div>
+										<p class = "grid-desc">限时最高直降200</p>
+										<p class = "grid-price">￥4799</p>
+									</a>
+								</li> -->
+								<!--3组 -->
+							<!-- 	<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+						 -->
+								
+							<!-- </ul>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<!-- 精品平板 -->
+			<!-- <div class = "layout" id = "lc_617814">
+				<div class = "home-channel-floor"> -->
+					<!-- 1标题 -->
+					<!-- <div class = "h"> -->
+						<!-- 左 -->
+						<!-- <h2 class = "channel-title fl">精品平板</h2> -->
+						<!-- 中 -->
+						<!-- <ul class = "channel-nav fl">
+							<li><a href="">平板电脑</a></li>
+							<li><a href="">笔记本电脑</a></li>
+							<li><a href="">笔记本配件</a></li>
+						</ul> -->
+						<!-- 右 -->
+						<!-- <div class = "channel-more fr">
+							<a href="">查看更多</a>
+						</div> -->
+					<!-- </div> -->
+					<!-- 2内容 -->
+					<!-- <div class = "b">
+						<div class = "goods-list">
+							<ul class = "grid-list clearfix"> -->
+								<!-- 1组 -->
+								<!-- <li class = "grid-items grid-items-md"><a class = "thumb" href=""><img src="images/pingban1.png" alt=""></a></li> -->
+								<!-- 2组 -->
+								<!-- <li class = "grid-items">
+									<a class = "thumb" href="">
+										<div class = "grid-info">
+											<p class = "grid-img">
+												<img src="images/pingban2.png" alt="">
+											</p>
+										</div>
+										<div class = "grid-title">华为平板 M5青春版</div>
+										<p class = "grid-desc">智能语音平板</p>
+										<p class = "grid-price">￥1899</p>
+									</a>
+								</li> -->
+								<!--3组 -->
+								<!-- <li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li> -->
+								
+							<!-- </ul>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		<!-- 第二块  智能穿戴 智能家居 热销配件 品牌配件   格式相同 -->
+			
+			<!-- 智能穿戴 -->
+			<!-- <div class = "layout" id = "lc_617800">
+				<div class = "home-channel-floor"> -->
+					<!-- 1标题 -->
+					<!-- <div class = "h">
+						左
+						<h2 class = "channel-title fl">智能穿戴</h2>
+						中
+						<ul class = "channel-nav fl">
+							<li><a href="">手环</a></li>
+							<li><a href="">手表</a></li>
+							<li><a href="">VR</a></li>
+						</ul>
+						右
+						<div class = "channel-more fr">
+							<a href="">查看更多</a>
+						</div>
+					</div> -->
+					<!-- 2内容 -->
+					<!-- <div class = "b"> -->
+						<!-- 内容上 -->
+						<!-- <div class = "goods-list">
+							<ul class = "grid-list clearfix">
+								1组
+								<li class = "grid-items grid-items-lg"><a class = "thumb" href=""><img src="images/shoubiao1.png" alt=""></a></li>
+								2组
+								<li class = "grid-items">
+									<a class = "thumb" href="">
+										<div class = "grid-info">
+											<p class = "grid-img">
+												<img src="images/shoubiao2.png" alt="">
+											</p>
+										</div>
+										<div class = "grid-title">HUAWEI WATCH GT</div>
+										<p class = "grid-desc">稀缺货源  限量发售 </p>
+										<p class = "grid-price">￥1288</p>
+									</a>
+								</li>
+								3组
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								
+							</ul>
+						</div> -->
+						<!-- 内容下 点击按钮滚动图片-->
+						<!-- <div id = "goodsContent3" class = "goods-rolling swiper-container relative pdt-12">
+							<ul class = "grid-list swiper-wrapper clearfix" style= "width: 1414px; height: 240px;">
+								第一列
+								<li class = "grid-items swiper-slide swiper-slide-visible swiper-slide-active" id = "10">
+									<a class = "thumb" href="">
+										<div class = "grid-info">
+											<p class = "grid-img">
+												<img src="images/shoubiao11.png" alt="">
+											</p>
+										</div>
+										<div class = "grid-title">华为智能手表 保时捷联合设计</div>
+										<p class = "grid-desc">低调奢华 天生不凡</p>
+										<p class = "grid-price">￥4988</p>
+									</a>
+								</li>
+								第二列
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "11">
+									<a class = "thumb" href="">
+										<div class = "grid-info">
+											<p class = "grid-img">
+												<img src="images/shoubiao12.png" alt="">
+											</p>
+										</div>
+										<div class = "grid-title">华为手环B3 青春版</div>
+										<p class = "grid-desc">是手环 也是耳机 </p>
+										<p class = "grid-price">￥499</p>
+									</a>
+								</li>
+								第三列
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "12">
+									<a class = "thumb" href="">
+										<div class = "grid-info">
+											<p class = "grid-img">
+												<img src="images/shoubiao12.png" alt="">
+											</p>
+										</div>
+										<div class = "grid-title">华为手环B3 青春版</div>
+										<p class = "grid-desc">是手环 也是耳机 </p>
+										<p class = "grid-price">￥499</p>
+									</a>
+								</li>
+								第四列
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "13"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "14"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "15"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "16"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "17"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "18"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "19"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "20"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "21"></li>	
+							</ul>
+							左右两个按钮
+							<div class = "grid-btn swiper-button-prev btn-prev disabled">
+								<span></span>
+							</div>
+							<div class = "grid-btn swiper-button-next btn-next">
+								<span></span>
+							</div>
+						</div>
+											</div>
+										</div>
+									</div> -->
+			<!-- 智能家居 -->
+			<!-- <div class = "layout" id = "lc_617806">
+				<div class = "home-channel-floor">
+					1标题
+					<div class = "h">
+						左
+						<h2 class = "channel-title fl">智能家居</h2>
+						中
+						<ul class = "channel-nav fl">
+							<li><a href="">路由器</a></li>
+							<li><a href="">子母/分布式路由</a></li>
+							<li><a href="">电力猫</a></li>
+						</ul>
+						右
+						<div class = "channel-more fr">
+							<a href="">查看更多</a>
+						</div>
+					</div>
+					2内容
+					<div class = "b">
+						内容上
+						<div class = "goods-list">
+							<ul class = "grid-list clearfix">
+								1组
+								<li class = "grid-items grid-items-lg"><a class = "thumb" href=""><img src="images/jiaju3.png" alt=""></a></li>
+								2组
+								<li class = "grid-items">
+									<a class = "thumb" href="">
+										<div class = "grid-info">
+											<p class = "grid-img">
+												<img src="images/jiaju4.png" alt="">
+											</p>
+										</div>
+										<div class = "grid-title">华为AI音箱</div>
+										<p class = "grid-desc">丹拿音质 声纹识别 </p>
+										<p class = "grid-price">￥399</p>
+									</a>
+								</li>
+								3组
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								<li class = "grid-items"><a href=""></a></li>
+								
+							</ul>
+						</div> -->
+						<!-- 内容下 点击按钮滚动图片-->
+						<!-- <div id = "goodsContent4" class = "goods-rolling swiper-container relative pdt-12">
+							<ul class = "grid-list swiper-wrapper clearfix" style= "width: 2222px; height: 240px;">
+								第一列
+								<li class = "grid-items swiper-slide swiper-slide-visible swiper-slide-active" id = "10">
+									<a class = "thumb" href="">
+										<div class = "grid-info">
+											<p class = "grid-img">
+												<img src="images/jiaju1.png" alt="">
+											</p>
+										</div>
+										<div class = "grid-title">荣耀路由标准版</div>
+										<p class = "grid-desc">限时直降60元</p>
+										<p class = "grid-price">￥99</p>
+									</a>
+								</li>
+								第二列
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "11">
+									<a class = "thumb" href="">
+										<div class = "grid-info">
+											<p class = "grid-img">
+												<img src="images/jiaju3.png" alt="">
+											</p>
+										</div>
+										<div class = "grid-title">华为路由器WS5102</div>
+										<p class = "grid-desc">真双频就是快   </p>
+										<p class = "grid-price">￥159</p>
+									</a>
+								</li>
+								第三列
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "12">
+									<a class = "thumb" href="">
+										<div class = "grid-info">
+											<p class = "grid-img">
+												<img src="images/jiaju2.png" alt="">
+											</p>
+										</div>
+										<div class = "grid-title">荣耀路由X1 增强版</div>
+										<p class = "grid-desc">限时直降50元  </p>
+										<p class = "grid-price">￥99</p>
+									</a>
+								</li>
+								第四列
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "13"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "14"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "15"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "16"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "17"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "18"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "19"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "20"></li>
+								<li class = "grid-items swiper-slide swiper-slide-visible" id = "21"></li>	
+							</ul>
+							左右两个按钮
+							<div class = "grid-btn swiper-button-prev btn-prev disabled">
+								<span></span>
+							</div>
+							<div class = "grid-btn swiper-button-next btn-next">
+								<span></span>
+							</div>
+						</div>
+											</div>
+										</div> -->
+			<!-- </div> -->
+
+			<!-- 轮播图 间隙-->
+			<!-- <div class = "hr-27"></div> -->
+			
+			
+
+			<!-- 热销配件 -->
+			<!-- <div class = "layout" id = "lc_617802"></div> -->
+			<!-- 品牌配件 -->
+			<!-- <div class = "layout" id = "lc_617810"></div> -->
+			<!-- <div class = "hr-20"></div> -->
+
+		</div>
+		<div class = "channel1">
+			<div class = "layout">
+				<!-- 轮播图 -->
+				<div class = "home-banner">
+					<div class = "home-banner-slideshow">
+						<div class = "banner-slideshow">
+							<div class = "hr-27"></div>
+							<div id = "m-banner" class = "chanel-div" style = "width:1200px;height:200px;">
+								<ul class = "ul2" style = "width:1200px;height:200px;">
+									<li class = "ec-slider-item">
+									<div class = "ec-slider-item-img"><a href=""><img src="images/xinren.jpg" alt=""></a></div></li>
+								</ul>
+							</div>
+							<div class = "hr-13"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 下边图片 -->
+		<!-- <div class = "channel1">
+			<div class = "layout"> -->
+				<!-- 轮播图 -->
+				<!-- <div class = "home-banner">
+					<div class = "home-banner-slideshow">
+						<div class = "banner-slideshow">
+							<div class = "hr-27"></div>
+							<div id = "m-banner" class = "chanel-div" style = "width:1200px;height:120px;">
+								<ul class = "ul2" style = "width:1200px;height:120px;">
+									<li class = "ec-slider-item">
+									<div class = "ec-slider-item-img"><a href=""><img src="images/xinren.jpg" alt=""></a></div></li>
+								</ul>
+							</div>
+							<div class = "hr-13"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- 底部 -->
+		<!-- 底部上 -->
+		<div class="slogan-container">
+		    <div class="slogan">
+		        <ul>
+		            <li class="s1"><a target="_blank" href=""><i></i>百强企业&nbsp;品质保证</a></li>
+		            <li class="s2"><a target="_blank" href=""><i></i>7天退货&nbsp;15天换货</a></li>
+		            <li class="s3">
+		                <a target="_blank" href=""><i></i>
+		                    <span>48元起免运费</span>
+		                </a>
+		            </li>
+		            <li class="s4"><a target="_blank" href=""><i></i>1000家维修网点&nbsp;全国联保</a></li>
+		        </ul>
+		    </div>
+		</div>
+		<!-- 底部中 -->
+		<div class="footer-container">
+    		<div class="footer">
+		        <div class="footer-warrant-area clearfix">
+		        	<p class="footer-warrant-logo fl">
+		        		<a href="">
+		        			<img src="https://res.vmallres.com/pimages//template/content/2018/HBHfAUYHLA0u5qMS8Nkr.png" title="vmall.png" style= "float:none;">
+		        		</a>
+		        	</p>
+		        	<div class="fl fmm">
+		        		<ul class="footer-warrant-link">
+		        			<li><a href="">华为集团</a></li>
+		        			<li><a href="">华为CBG官网</a></li>
+		        			<li><a href="">荣耀官网</a></li>
+		        			<li><a href="">花粉俱乐部</a></li>
+		        			<li><a href="">华为应用市场</a></li>
+		        			<li><a href="">EMUI</a></li>
+		        			<li><a href="">华为终端云空间</a></li>
+		        			<li><a href="">开发者联盟</a></li>
+		        			<li><a href="">华为商城手机版</a></li>
+		        			<li><a href="">网站地图</a></li>
+		        		</ul>
+		        		<a href="" target="_blank" title="隐私声明" rel="nofollow">隐私声明</a>
+		        		<a href="" target="_blank" title="服务协议" rel="nofollow"> 服务协议</a> 
+		        		<p>Copyright © 2012-2018 华为软件技术有限公司 版权所有 保留一切权利</p>
+		        		
+		        		<br>公安备案 
+		        		<a href="" target="_blank" rel="nofollow">苏公网安备32011402010009号</a><em> | </em>
+		        		<a target="_blank" href="" rel="nofollow">苏ICP备17040376号-6</a>
+		        		<br> <p>增值电信业务经营许可证：苏B2-20130048号</p><em>| </em>
+		        		<a href="" target="_blank">网络文化经营许可证：苏网文[2015] 1599-026号</a><br>
+		        	</div>
+		        	<p class="fr footer-warrant-img">
+		        		<a class="fl" href="" target="_blank" rel="nofollow">
+		        			<img src="https://res.vmallres.com/pimages//sale/2018-05/20180522101715775.jpg" alt="TRUSTe隐私认证" title="TRUSTe隐私认证">
+		        		</a>                        
+		        		<a class="fl" href="" target="_blank" rel="nofollow">
+		        			<img src="https://res.vmallres.com/pimages//template/content/2016/20160226162415360.png" alt="电子营业执照" title="电子营业执照">
+		        		</a>        
+		        		<a class="fl" href="" target="_blank" rel="nofollow">
+		        			<img src="https://res.vmallres.com/pimages//template/content/2016/20160226162521265.png" title="可信网站" alt="可信网站">
+		        		</a> 
+		        	</p>  
+		        	<p><br></p>
+		       </div>
+		    </div>   
+		</div>
+	</body>
+</html>
+		
